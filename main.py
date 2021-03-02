@@ -1,5 +1,4 @@
 import re
-import tkinter
 # 身份证号检查
 ID = input("Please input your personal ID numbers: ")
 ID_pattern = re.compile(r"(\d{17})(\d|x)$", re.I)  # 123456789012345678
@@ -65,7 +64,5 @@ personal_info_Chinese = {"出生地": born_address,
                          "出生序号": born_num,
                          "性别": gender}
 print(personal_info_Chinese)
-# top = tkinter.Tk()
-# top.mainloop()
 input("Press <enter>")
 
